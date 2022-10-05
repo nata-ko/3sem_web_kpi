@@ -1,0 +1,592 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+}
+
+:is(h1, h2, h3, h4, h5, h6){
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:is(.compose_block_text p, .first_image, .second_image, .third_image, .compose_block_subtitle, .compose_block_title)::selection{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+/*------HEADER--------*/
+.header{
+    top: 0;
+    position: sticky;
+    z-index: 10000;
+    background: white;
+}
+.header_inner{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_link{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    transition: color .3s linear;
+    color:black;
+}
+.nav_link:hover{
+    color: rgba(239, 44, 119, 0.89);
+}
+
+
+/*BLOCK FOR TEXT AND IMAGES COMPOSE*/
+
+.container{
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.compose_block_title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.compose_block_subtitle{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+}
+.compose_container{
+    display: flex;
+    justify-content: space-between;
+}
+.compose_block_text{
+    width: 1000px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+
+.first_image{
+    width: 180px;
+    height: 200px;
+    float: left;
+    margin-right: 5px;
+}
+.second_image{
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin-left: 5px;
+}
+.third_image{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+:is(.rectangle_red, .rectangle_purple, .rectangle_blue){
+    width: 300px;
+    height: 300px;
+}
+
+.rectangle_red{
+    margin-top: 15px;
+    position: relative;
+    background: linear-gradient(to left, rgb(183, 144, 219), rgb(239, 44, 119));
+    background-size: 200%;
+    transition: all .3s linear;
+}
+
+.rectangle_purple{
+    background: linear-gradient(to left,  rgb(223, 130, 166), rgb(56, 56, 227));
+    background-size: 200%; 
+    position: absolute;
+    top: 37%;
+    right: 7%;
+    transition: all .3s linear;
+}
+.rectangle_blue{
+   background: linear-gradient(to left, rgb(128, 128, 205), rgb(124, 13, 228)  );
+   background-size: 200%; 
+   position: absolute;
+   top: 49%;
+   right: 14%;
+   transition: all .3s linear;
+   
+}
+
+:is(.rectangle_red, .rectangle_purple, .rectangle_blue):hover{
+    z-index: 20;
+    background-position-x: 100%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/*REGISTRATION FORM*/
+
+
+/* PROGRESS BAR*/
+.progress_bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.progress_step{
+    width: 35px;
+    height: 3px;
+    content: "";
+    display: block;
+    background: #ccc;
+}
+
+
+
+
+/*global*/
+.width_50{
+    width: 50%;
+}
+.rg_auto{
+    margin-left: auto;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+
+/*REG FORM*/
+.reg_section{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgba(239, 44, 119, 0.89), rgba(136, 40, 225, 0.89));
+}
+
+
+
+.form{
+    
+    margin: 0 auto;
+    padding: 17px;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    width: 900px;
+    background-color: white;
+}
+
+.reg_form_title{
+    position: relative;
+    font-size: 27px;
+    text-align: center;
+}
+.reg_form_title:after{
+    content: " ";
+    background: linear-gradient(to left, rgba(239, 44, 119, 0.89), rgba(136, 40, 225, 0.89));
+    width: 30px;
+    height: 2px;
+    top: 100%;
+    left: 42%;
+    display: block;
+    position: absolute;
+}
+
+ .input_group{
+    display: block;
+    margin: 20px 0;
+    position: relative;
+}
+
+.input_group .choose_file{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.preview_chosen_file{
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+
+}
+.preview_chosen_file img{
+    width: 100%;
+}
+
+.file_btn{
+    padding: 10px 40px;
+    color: #333;
+    background: #ccc;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    transition: all .2s linear;
+}
+
+.input_group .button_file:hover .file_btn{
+    background: rgba(239, 44, 119, 0.89);
+    border-color: rgba(239, 44, 119, 0.89);
+    color: white;
+
+}
+
+
+ .input_group label{
+    display: block;
+    margin-bottom: 8px;
+}
+.input_group input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    outline: none;
+}
+.input_group fieldset{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.input_group input:focus{
+    border-color: rgba(239, 44, 119, 0.89);
+}
+
+.btn{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background: #ccc;
+    color: #333;
+    transition: all .2s linear;
+}
+
+
+:is(.btn, .file_btn):hover{
+    background: rgba(239, 44, 119, 0.89);
+    border-color: rgba(239, 44, 119, 0.89);
+    color: white;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.radio_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.radio_wrap input{
+    accent-color: rgba(239, 44, 119, 0.89);
+}
+
+select, option{
+    font-size: 18px;
+    padding: 10px;
+    width: clamp(285px, 20%, 400px);
+    border-radius: 10px;
+}
+.form_step .check_box{
+    display: block;
+}
+
+
+
+.form_wrap{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.progress_step_active{
+    background: linear-gradient(to left, rgba(239, 44, 119, 0.89), rgba(136, 40, 225, 0.89));
+}
+.progress{
+    width: 0;
+}
+
+.buttons .btn{
+    margin: 0 50px;
+    font-weight: 600;
+    font-size: 17pxs;
+}
+
+
+
+
+
+
+/*----LOG IN FORM------*/
+.login_form_section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgba(239, 44, 119, 0.89), rgba(136, 40, 225, 0.89));
+    
+}
+
+.form_container{
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+.form_login{
+    padding: 35px;
+}
+.form_title{
+    font-size: 27px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 10px;
+}
+.form_title:after{
+    position: absolute;
+    top: 100%;
+    content: "";
+    width: 30px;
+    height: 2px;
+    left: 0;
+    background:linear-gradient(to left, rgba(239, 44, 119, 0.89), rgba(136, 40, 225, 0.89));
+}
+
+.input_field{
+    margin-top: 30px;
+    position: relative;
+    height: 55px;
+}
+.input_field input{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    position: absolute;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid  #ccc;
+    color: rgba(239, 44, 119, 0.89);
+    transition: all .3s linear;
+}
+.input_field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 22px;
+}
+.input_field i.icon{
+    left: 0;
+}
+.input_field i.show_hidden_pass{
+    right: 0;
+}
+
+.input_field input:is(:focus, :valid){
+    border-bottom-color: rgba(239, 44, 119, 0.89);
+}
+
+.input_field input:is(:focus, :valid) ~ i{
+    color: rgba(239, 44, 119, 0.89);
+}
+
+
+.check_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.check_box_content input{
+    accent-color:rgba(239, 44, 119, 0.89) ;
+}
+.check_box_content input:focus{
+    color: rgba(239, 44, 119, 0.89);
+}
+.forgor_password{
+    text-decoration: none;
+    color: #333;
+    transition: all .2s linear;
+}
+.forgor_password:hover{
+    text-decoration: underline;
+    color: rgba(239, 44, 119, 0.89);
+}
+
+.button input{
+    border: none;
+    background: rgba(239, 44, 119, 0.89);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button input:hover{
+    background-color: rgba(245, 0, 94, 0.89);
+}
+
+.login_signup{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup{
+    color: rgba(239, 44, 119, 0.89);
+    text-decoration: none;
+}
+.signup:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*Contact form*/
+
+.contact_form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgba(239, 44, 119, 0.89), rgba(136, 40, 225, 0.89));
+    
+}
+
+.cont_form_container{
+    background: white;
+    display: block;
+    padding: 30px;
+    width: 500px;
+    margin: 20px auto;
+
+}
+
+.input_group textarea{
+    outline: none;
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    border-color: #ccc;
+    font-size: 17px;
+    resize: vertical;
+}
+
+.input_group textarea:focus{
+    border-color: rgba(239, 44, 119, 0.89);
+    color: rgba(239, 44, 119, 0.89);
+}
+
+.submit{
+    font-size: 16px;
+    color: #333;
+    transition: all .2s linear;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+.submit:hover{
+    background: rgba(239, 44, 119, 0.89);
+    color: white;
+}
+
+/*footer*/
+footer{
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: white;
+
+}
+
+.sm{
+    padding: 15px 20px; 
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.uil{
+    font-size: 30px;
+}
+.footer_link{
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .2s linear;
+    margin: 0 20px;
+}
+
+.footer_link:hover .uil{
+    color: rgba(245, 0, 94, 0.89);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+::-webkit-scrollbar{
+    display: none;
+}

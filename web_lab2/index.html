@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML FORMS</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <nav class="nav_links">
+                <a href="#registration" class="nav_link">Registration
+                    <i class="uil uil-clipboard-notes"></i>
+                </a>
+                <a href="#login" class="nav_link">Log in 
+                    <i class="uil uil-signin"></i>
+                </a>
+                <a href="#respond" class="nav_link">Respond
+                    <i class="uil uil-edit"></i>
+                </a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+
+    <!--FIRST BLOCK FOR TEXT AND IMAGES COMPOSE-->
+    <section class="compose_block">
+        <div class="container">
+            <h2 class="compose_block_title">practise work 2</h2>
+            <h3 class="compose_block_subtitle">Made by TR-11 Natalie Bratshykova</h3>
+        </div>
+        <div class="compose_container">
+            <div class="compose_block_text">
+                <p>
+                    <img src="../second lab/images/shinobu.jpeg" alt="Shinobu" class="first_image">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut lobortis dolor id massa volutpat, et lacinia dui blandit. Pellentesque consectetur efficitur lorem, 
+                    sed faucibus metus mattis eu. Donec ut eros lorem. Nulla facilisi. Donec fermentum nisl sed odio interdum 
+                    aliquam. Morbi lacinia a odio auctor ultrices. Fusce enim urna, porta ut risus vitae, ornare sodales ante. 
+                    Pellentesque in justo lorem. Donec non semper lectus. Aliquam erat volutpat. Quisque eu dui sit amet turpis 
+                    commodo porta. Vivamus nulla lectus, dictum ac luctus sed, condimentum auctor tortor.</p>
+                <p>Sed lacinia dui ac nibh sagittis, id faucibus libero tincidunt. Aenean accumsan 
+                    fermentum enim quis pharetra. Proin orci nisl, aliquam in arcu at, auctor lacinia ante. Nulla dapibus ornare
+                     enim vel tincidunt. Suspendisse id diam varius, commodo purus a, mollis dui. Nulla facilisi. Nam dictum in 
+                     purus quis tristique. Sed sed sollicitudin elit.</p>
+                <p>
+                    <img src="../second lab/images/shiki.jpeg" alt="" class="second_image">
+                    In vehicula est tempor pulvinar egestas. Cras vulputate ante eget blandit fermentum. 
+                    Cras vel malesuada dolor. Aenean ut nibh dui. Cras viverra elit quis metus gravida sagittis. Integer ullamcorper
+                    rhoncus lectus, sit amet sodales neque mollis eget. Praesent malesuada felis sit amet enim auctor cursus. 
+                    Suspendisse eget odio fringilla, vulputate arcu ac, varius sem.</p>
+                <p>Praesent eleifend sem tortor, vel viverra nisi auctor ac. Duis et commodo augue. 
+                    Ut id metus varius, fringilla odio quis, lobortis neque. Cras viverra neque sit amet nisi luctus, vitae convallis
+                    elit luctus. Aenean quis lorem sapien. Proin iaculis, est vel rhoncus placerat, leo felis feugiat nulla,
+                    ac ornare magna tellus a nunc. In rutrum, tortor ac tristique pretium, lacus dui pulvinar purus, a interdum ante
+                    leo a sapien. Morbi tincidunt ligula id gravida efficitur. Aenean congue pulvinar scelerisque. Proin nisi quam, 
+                    interdum et finibus sed, malesuada et lacus. Vivamus sit amet cursus eros.</p>
+                <p>
+                    <img src="../second lab/images/touka.jpeg" alt="" class="third_image">
+                    Nullam vel nunc sollicitudin, imperdiet felis vel, malesuada nibh. Integer ultrices tellus 
+                    quis convallis placerat. Vestibulum convallis maximus tellus eu tempus. Morbi sodales rutrum tempor. Morbi turpis orci, 
+                    sollicitudin non bibendum id, accumsan at nunc. Nulla metus sapien, lobortis a nisl sed, vehicula pellentesque sem. Nulla 
+                    porta magna id ante ultrices, et pulvinar neque porta. Ut libero ante, vestibulum vitae dui sed, pharetra condimentum odio.
+                    Proin vitae suscipit tellus, in dapibus nisl. Cras eu dapibus felis. Fusce id viverra tellus. Nunc maximus pulvinar sollicitudin. 
+                    Donec nec fringilla odio. Praesent fringilla ex et pretium consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis dolor id massa volutpat, 
+                    et lacinia dui blandit. Pellentesque consectetur efficitur lorem, sed faucibus metus mattis eu. Donec ut eros lorem.
+                    Nulla facilisi. Donec fermentum nisl sed odio interdum aliquam. Morbi lacinia a odio auctor ultrices. Fusce enim urna, 
+                    porta ut risus vitae, ornare sodales ante. Pellentesque in justo lorem. Donec non semper lectus. Aliquam erat volutpat. 
+                    Quisque eu dui sit amet turpis commodo porta. Vivamus nulla lectus, dictum ac luctus sed, condimentum auctor tortor.
+                </p>
+            </div>
+                
+            <div class="images_postion">
+                <div class="rectangle_red"></div>
+                <div class="rectangle_purple"></div>
+                <div class="rectangle_blue"></div>
+
+            </div>
+        
+    
+        
+        </div>
+
+    </section>
+    <hr>
+   
+
+    <!--REGISTRATION-->
+    <section class="reg_section" id="registration">
+        <form action="#" class="form">
+            <h3 class="reg_form_title">Registration</h3>
+
+
+            
+             <div class="input_group">
+                        <div class="preview_chosen_file" id="prevFile"></div>
+                    </div>
+
+            <!-- Progress bar   -->
+            <!--<div class="progress_bar">
+                <div class="progress" id="progress"></div>
+                <div class="progress_step progress_step_active"></div>
+                <div class="progress_step"></div>
+                <div class="progress_step"></div>
+                <div class="progress_step"></div>
+            </div>-->
+
+            <div class="form_wrap">
+                <div class="form_step form_step_active">
+                   
+    
+                    <div class="input_group">
+                        <div class="button_file">
+                            <label for="file">Choose a photo</label>
+                            <input type="file" name="" id="file" accept=".jpeg, .png, .jpg" class="choose_file">
+                            <button class="file_btn">Choose</button>
+                        </div>
+                    </div>
+    
+    
+                    <div class="input_group">
+                        <label for="user_name">User name</label>
+                        <input type="text" name="user_name" id="user_name" placeholder="Enter your name" pattern = "[A-Za-z]{2,}" required>
+                    </div>
+                    <div class="input_group">
+                        <label for="user_sername">User sername</label>
+                        <input type="text" name="user_sername" id="user_sername" placeholder="Enter your sername" pattern = "[A-Za-z]{2,}"required>
+                    </div>
+                
+                </div>
+    
+                <div class="form_step">
+    
+    
+                    <div class="input_group  ">
+    
+                        <fieldset>
+                            <legend>Choose you sex</legend>
+                            <div class="flex">
+                                <div class="radio_wrap">
+                                    <label for="user_sex">male</label>
+                                    <input type="radio" name="user_sex" id="male" >
+                                </div>
+                                <div class="radio_wrap">
+                                    <label for="user_sex">female</label>
+                                    <input type="radio" name="user_sex" id="female" checked >
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                    </div>
+                   
+                    <div class="input_group">
+                        <label for="user_age">User age</label>
+                        <input type="number" name="user_age" id="user_age" >
+                    </div>
+    
+                    <div class="input_group">
+                        <label for="user_bod">User birthday</label>
+                        <input type="date" name="user_bod" id="user_bod">
+                    </div>
+    
+                </div>
+    
+    
+                <div class="form_step">
+    
+    
+                    <div class="input_group">
+    
+                        <label for="country">Country</label>
+                        <input list="country">
+                            <datalist id="country" name="country">
+                                <option>Select your country</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote D'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran, Islamic Republic of</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="CS">Serbia and Montenegro</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syrian Arab Republic</option>
+                                <option value="TW">Taiwan, Province of China</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.s.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </datalist>
+                    </div>
+                      
+                   
+                    <div class="input_group">
+                        <label for="user_phone">User phone</label>
+                        <input type="tel" name="user_phone" id="user_phone" placeholder="0XX-XXX-XX-XX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                    </div>
+    
+                    <div class="input_group">
+                        <label for="user_social_m">User social media</label>
+                        <input type="text" name="user_social_m" id="user_social_m" placeholder="Enter your social media">
+                    </div>
+    
+                </div>
+    
+    
+                <div class="form_step">
+                                      
+                    <div class="input_group">
+                        <label for="user_email">User email</label>
+                        <input type="email" name="user_email" id="user_email"  required>
+                    </div>
+    
+                    <div class="input_group">
+                        <label for="user_password">User password</label>
+                        <input type="password" name="user_password" id="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </div>
+    
+    
+                    <div class="radio_wrap check_box">
+                        <input type="checkbox" name="user_sex" id="male" >
+                        <label for="user_sex">I agree with everything</label>
+                    </div>
+    
+                </div>
+            </div>
+            <div class=" buttons">
+                <button type="reset" class="btn">Reset</button>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <!--THIRD  BLOCK FOR LOG IN FORM-->
+   <section class="login_form_section" id="login">
+
+        <div class="form_container">
+            <div class="form_login">
+                <h2 class="form_title">Log in</h2>
+
+                <form action="#">
+                    <div class="input_field">
+                        <input type="email" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope-alt icon"></i>
+                    </div>
+
+                    <div class="input_field ">
+                        <input type="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash show_hidden_pass"></i>
+                    </div>
+                    <div class="check_box">
+                        <div class="check_box_content">
+                            <input type="checkbox" name="" id="check_login">
+                            <label for="check_login">Remember me</label>
+    
+                        </div>
+                        <a href="#" class="forgor_password">Forgot password</a>
+                    </div>
+
+                    <div class="input_field button">
+                        <input type="submit" value="Log in">
+                    </div>
+
+                </form>
+
+                <div class="login_signup">
+                    <div class="signup_text">
+                        Not a member?<a href="#registration" class="signup"> Signup now</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <!--FOURTH BLOCK FOR COMMENT FORM-->
+    <section class="contact_form" id="respond">
+
+        <div class="cont_form_container">
+            <form  class="cont_form">
+                <h3 class="form_title">Contact Us</h3>
+
+
+                <div class="input_field ">
+                    <input type="text" placeholder="Enter your name" required>
+                    <i class="uil uil-user icon"></i>
+                </div>
+
+                <div class="input_field ">
+                    <input type="email" placeholder="Enter your email" required>
+                    <i class="uil uil-envelope-alt icon"></i>
+                </div>
+
+                <div class="input_group ">
+                    <label for="select_topic">Select topic</label>
+                    <input list="select_topic" required>
+                    <datalist id="select_topic">
+                        <option value="Review"></option>
+                        <option value="Comment"></option>
+                        <option value="Discuss"></option>
+                        <option value="Complain"></option>
+                        <option value="Cry"></option>
+                        <option value="Prefer"></option>
+                    </datalist>
+                </div>
+
+                <div class="input_group">
+                    <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input_group">
+                    <div class="buttons">
+                        <button type="reset" class="submit">Reset</button>
+                        <input type="submit" value="Send" class="submit">
+                        
+                    </div>
+                </div>
+
+                
+                
+            </form>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="sm">
+            <a href="https://www.instagram.com/_.nyan_nayn._/"  class="footer_link" target="_blank"><i class="uil uil-instagram" ></i></a>
+            <a href="https://en.wikipedia.org/wiki/Yuzuru_Hanyu" target="_blank" class="footer_link"><i class="uil uil-facebook-f"></i></a>
+            <a href="https://t.me/Na_kami" target="_blank" class="footer_link"><i class="uil uil-telegram-alt"></i></a>
+            
+        </div>
+    </footer>
+
+    <div class="reg_section"></div>
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
